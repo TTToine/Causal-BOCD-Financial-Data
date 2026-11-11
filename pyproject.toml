@@ -1,0 +1,24 @@
+[project]
+name = "causal-bocd"
+version = "0.2.0"
+description = "Bayesian Online Changepoint Detection with a Normal-Gamma model, decreasing hazard and dollar bars"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+data = ["yfinance>=0.2.40"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["bocd"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120

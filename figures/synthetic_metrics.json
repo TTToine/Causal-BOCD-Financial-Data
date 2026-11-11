@@ -1,0 +1,25 @@
+{
+  "n": 950,
+  "true_changepoints": [
+    250,
+    400,
+    600,
+    720
+  ],
+  "detection_delay_steps (P(r<10)>0.5)": {
+    "250": 0,
+    "400": 4,
+    "600": 0,
+    "720": 26
+  },
+  "max P(r<10) right after isolated outliers": {
+    "60": 0.9974510441910198,
+    "140": 0.9973357469947425,
+    "200": 0.9634677552920633
+  },
+  "mean_nlpd": {
+    "expanding_gaussian": 2.0968075149131122,
+    "bocd_constant_hazard": 1.757211089669362,
+    "bocd_decreasing_hazard": 1.75673749020919
+  }
+}
